@@ -38,15 +38,29 @@ public string GetDisplayText()
         for ( int i = 0; i < _words.Count; i ++)
         {
             text += " " + _words[i].GetDisplayText();   
-          
+            if (i == 12)
+            {
+                text += " \n";
+            }   
         }
-        //text = $"{_verse}";
+        
         
         return text;
     }
 public bool IsCompletelyHidden()
     {      
-        return true;
+        bool text = true;        
+        for ( int i = 0; i < _words.Count; i ++)
+        {
+            text = _words[i].isHidden();        
+            if (text == false)
+            {
+                break;
+            }
+            
+        } 
+
+        return text;
     }
 
 

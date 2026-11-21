@@ -17,25 +17,23 @@ public Word(string text)
 public void Hide()
     {
         string hideWord = "";
+        
         for ( int i = 0; i < _text.Length; i ++)
         {
-            hideWord += "_ ";
+            hideWord += "_";
         } 
         _text = hideWord;
         _isHidden = true;
        
        
     }
-public void Show()
-    {
-       _isHidden = false;
-
-    }
 public bool isHidden()
     {
-      
+        if (_isHidden != true)
+        {
+            return false;
+        }  
         return true;
-      
     }
 public string GetDisplayText()
     {
@@ -45,10 +43,7 @@ public string GetDisplayText()
         {
             Hide();
         } 
-        else
-        {
-            Show();
-        }
+       
         tempWord = _text;
 
 
