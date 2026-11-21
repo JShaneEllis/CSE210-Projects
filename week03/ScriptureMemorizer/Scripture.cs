@@ -5,7 +5,7 @@ public class Scripture
     private string _verse;
     public List<Word> _words = new List<Word>();
 
-    public Scripture(Reference reference, string text)
+public Scripture(Reference reference, string text)
     {
         _reference = reference;
         _verse =  text;
@@ -23,30 +23,28 @@ public class Scripture
 
 
     }
-    public void HideRandomWords(int numberToHide)
+public void HideRandomWords(int numberToHide)
     {
-        // needs to move to program.
-        Random randomGenerator = new Random();
-        int magicNumberInt = randomGenerator.Next(1, _words.Count);
+       _words[numberToHide].Hide();
     
-        Word tempword = _words[magicNumberInt];
-        tempword.isHidden();
+       
+        
 
     
     }
-    public string GetDisplayText()
+public string GetDisplayText()
     {
         string text = "";        
         for ( int i = 0; i < _words.Count; i ++)
         {
-            text =     
+            text += " " + _words[i].GetDisplayText();   
           
         }
-        text = $"{_verse}";
+        //text = $"{_verse}";
         
         return text;
     }
-    public bool IsCompletelyHidden()
+public bool IsCompletelyHidden()
     {      
         return true;
     }

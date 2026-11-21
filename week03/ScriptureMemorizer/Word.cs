@@ -16,29 +16,42 @@ public Word(string text)
    
 public void Hide()
     {
+        string hideWord = "";
+        for ( int i = 0; i < _text.Length; i ++)
+        {
+            hideWord += "_ ";
+        } 
+        _text = hideWord;
         _isHidden = true;
+       
+       
     }
 public void Show()
     {
-      _isHidden = false;  
+       _isHidden = false;
+
     }
 public bool isHidden()
     {
       
-       return true;
+        return true;
       
     }
 public string GetDisplayText()
     {
         string tempWord = "";
-         for ( int i = 0; i < _words.Count; i ++)
+        
+        if (_isHidden == true)
         {
-            
-           
+            Hide();
+        } 
+        else
+        {
+            Show();
         }
-        
-        
-        
+        tempWord = _text;
+
+
         return tempWord;
 
     }
