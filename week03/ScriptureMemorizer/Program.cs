@@ -20,10 +20,7 @@ class Program
                
 
         while (menu != "quit" )
-        {
-             
-            
-            
+        {          
             
             for ( int i = 0; i < 3; i ++)
             {
@@ -44,18 +41,8 @@ class Program
             {
                 break;
             }
-           
-
-        
-
-
-
 
         }
-       
-       
-
-
 
     }
 }

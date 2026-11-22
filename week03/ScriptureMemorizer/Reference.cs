@@ -24,8 +24,7 @@ public class Reference
     public string GetDisplayText()
     {
         if (_endVerse == 0)
-        {
-            
+        {         
             string text = $"{_book} {_chapter}:{_verse} ";
             return text;
         }
@@ -35,8 +34,6 @@ public class Reference
             return text;
         }    
      
-
-
     }
 
 }
