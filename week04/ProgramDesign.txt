@@ -1,0 +1,75 @@
+Shane Ellis
+CSE210
+Program Design
+
+You Tube Class program:
+
+Video Class
+
+public _title: string
+public _author: string
+public _lenght: int
+public _List<Comment>
+GetDisplayText(): string
+
+Comment Class
+
+public _name
+public _comment
+AddComment(_name, _comment)
+GetDisplayText(): string
+
+This program will add title, author, lenght to Video Class, It will then add the comments to a list comments object,
+It will them get this information and use a display method to call the information.
+
+
+Online Ordering Program:
+
+( Product Class )
+_productName: string
+_productId: string
+_price: bool
+_quanity: int
+GetTotal(): bool
+setProduct(_productName, _productId, _price, _quanity):
+
+( Customer Class )
+_name: string
+_address<Address>: string
+GetUsa(): bool
+setCustomer(_name)
+GetAddress(): string
+
+
+( Address Class )
+_street: string
+_city: string
+_state: string
+_country: string
+SetAddress(_street, _city, _state, _country):
+getDisplayAddress(): return Address
+
+( Order Class )
+
+_poducts: List<Products> object
+Total: floot
+usa: bool
+GetPackingLabel(): string
+getShippingLabel(): string
+AddProduct(_products): string
+
+This Program adds the products to a list. Then it adds address information. The order class call the,
+the products ordered find the total, and adds shipping cost based on USA or not. It then displays the,
+Customer info and products ordered and total cost. It then displays the name and address for a label. 
+
+
+
+
+
+
+
+
+
+
+
+
